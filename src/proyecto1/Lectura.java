@@ -7,10 +7,10 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.Scanner;
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
+import javax.swing.*;
+/*import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
-import javax.swing.JOptionPane;
+import javax.swing.JOptionPane;*/
 
 /**
  *
@@ -136,6 +136,7 @@ public class Lectura extends javax.swing.JFrame {
           if(archivo.canRead()){
               if(archivo.getName().endsWith("txt")){
                   String contenido= op.abrirArchivo(archivo);
+                  txtAreaText.setText(contenido);
                   Lectura lect=new Lectura();
                   lect.txtAreaText.setText(contenido);
               }else{
