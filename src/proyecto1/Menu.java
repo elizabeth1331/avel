@@ -20,7 +20,7 @@ import javax.swing.*;
  * @author eliss
  */
 public class Menu extends javax.swing.JFrame {
-
+GestioDoc op=new GestioDoc();
     /**
      * Creates new form proyecto
      */
@@ -133,11 +133,13 @@ public class Menu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void ejecutarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ejecutarActionPerformed
-        // TODO add your handling code here:
+        String file = name.getText();
+        op.Lectura(file);
+        
     }//GEN-LAST:event_ejecutarActionPerformed
 
     private void nameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_nameActionPerformed
 
     private void leerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_leerActionPerformed

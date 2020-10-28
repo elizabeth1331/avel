@@ -8,9 +8,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.Scanner;
 import javax.swing.*;
-/*import javax.swing.ImageIcon;
-import javax.swing.JFileChooser;
-import javax.swing.JOptionPane;*/
+
 
 /**
  *
@@ -131,19 +129,7 @@ public class Lectura extends javax.swing.JFrame {
 
     private void selectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selectActionPerformed
 
-        if(seleccionado.showDialog(null, "Seleccionar archivo")== JFileChooser.APPROVE_OPTION){
-          archivo=seleccionado.getSelectedFile();
-          if(archivo.canRead()){
-              if(archivo.getName().endsWith("txt")){
-                  String contenido= op.abrirArchivo(archivo);
-                  txtAreaText.setText(contenido);
-                  Lectura lect=new Lectura();
-                  lect.txtAreaText.setText(contenido);
-              }else{
-                  JOptionPane.showMessageDialog(null, "Error, documento no encontrado. Intenta de nuevo", "Error", JOptionPane.ERROR_MESSAGE);
-              }
-          }
-        }
+       
            
     }//GEN-LAST:event_selectActionPerformed
 
